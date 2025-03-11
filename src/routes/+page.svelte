@@ -1,5 +1,7 @@
 <script>
 	// @ts-nocheck
+	import Contact from '../components/Contact.svelte';
+	import Footer from '../components/Footer.svelte';
+	import Main from '../components/Main.svelte';
+	import Services from '../components/Services.svelte';
 </script>
-
-<h1 class="relative grid h-screen place-content-center text-4xl">Shady</h1>
