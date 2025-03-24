@@ -10,6 +10,7 @@
 		emailjs.init('e_KMDLQaYx3UEdwhI');
 	});
 
+	// @ts-ignore
 	function handleSubmit(e) {
 		e.preventDefault();
 
