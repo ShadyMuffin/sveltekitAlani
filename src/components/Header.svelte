@@ -14,7 +14,7 @@
 </script>
 
 <header
-	class={'sticky top-0 z-[10] flex items-center justify-between border border-solid duration-200 ' +
+	class={'sticky top-0 z-[10] flex items-center justify-between border border-solid pl-6 duration-200' +
 		(y > 0
 			? ' sticky top-0 z-[10] flex items-center justify-between rounded-2xl border border-solid bg-slate-900 px-6 py-4 duration-200'
 			: ' border-transparent bg-transparent py-6 ')}

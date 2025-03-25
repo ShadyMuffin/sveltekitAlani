@@ -59,7 +59,7 @@
 					Hi! I'm <span class="text-4xl text-violet-400">Kevin</span>
 				</h2>
 				<h6 class="md:text-xxl text-center text-lg font-bold sm:text-2xl">
-					My goal is to help <br /> small companies
+					My goal is to help <br /> small businesses
 					<span class=" text-violet-400">Grow.</span>
 				</h6>
 			</div>
@@ -77,15 +77,13 @@
 				class="flex flex-col gap-2 text-center tracking-widest"
 			>
 				<h1 class="text-4xl">About Me</h1>
-				<p class="py-6 font-sans text-2xl">
+				<p class="py-6 font-sans text-2xl font-bold">
 					As a self-taught <span
-						class="text-3xl font-semibold text-pretty text-violet-400 uppercase italic"
+						class="text-3xl font-extrabold text-pretty text-violet-400 uppercase italic"
 					>
 						developer
-					</span>, I love turning ideas into reality through code. I started building websites to
-					help friends and family grow their small businesses, and now I’m here for you. Building
-					custom sites, keeping them running, and boosting them with ads. My passion for learning
-					drives me to deliver simple, effective solutions that help your business thrive online.
+					</span>, I design websites, keep them live, and grow them with ads. Here for the little
+					guys who need a big online edge.
 				</p>
 			</div>
 			<button
