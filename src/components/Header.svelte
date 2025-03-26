@@ -3,6 +3,7 @@
 	let tabs = [
 		{ name: 'Home', link: '/' },
 		{ name: 'Services', link: '#Services' },
+		{ name: 'Plans', link: '#Plans' },
 		{ name: 'Contact', link: '#Contact' }
 	];
 
@@ -31,9 +32,9 @@
 			>{/each}
 	</div>
 </header>
-<div class="flex place-content-center">
+<div class="flex place-content-end pr-10">
 	<button
-		class=" grid h-10 w-10 place-content-center rounded bg-amber-400 p-2 text-2xl font-bold text-black md:hidden"
+		class="z-[2] grid h-10 w-10 cursor-pointer place-content-center rounded bg-amber-300 p-2 text-2xl font-bold text-black hover:bg-violet-400 hover:text-white md:hidden"
 		onclick={toggleMenu}>☰</button
 	>
 	{#if showMenu}

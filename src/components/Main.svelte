@@ -90,7 +90,7 @@
 				onclick={goToContact}
 				class="w-64 cursor-pointer rounded-xl border-3 border-amber-300 px-6 py-3 text-xl font-bold text-white transition duration-300 ease-in-out hover:border-amber-500 hover:bg-amber-300 hover:text-black"
 			>
-				Get in Touch
+				Get Quote
 			</button>
 		{/if}
 	</section>
