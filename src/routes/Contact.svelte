@@ -40,12 +40,12 @@
 </script>
 
 <div class="h-screen p-8 text-center">
-	<h1 class="py-20 text-4xl">Contact</h1>
+	<h1 class="py-20 text-4xl underline">Contact</h1>
 	<div class="align-content-center flex flex-col place-content-center items-center gap-14">
 		<form
 			method="POST"
 			onsubmit={handleSubmit}
-			class="grid w-auto place-items-center justify-items-center gap-12 rounded-2xl border-2 p-7 text-center"
+			class="grid w-auto place-items-center justify-items-center gap-12 rounded-2xl border-2 bg-slate-800 p-7 text-center mix-blend-difference"
 		>
 			<input
 				placeholder="Your Email"

@@ -3,6 +3,7 @@
 	let tabs = [
 		{ name: 'Home', link: '/' },
 		{ name: 'Services', link: '#Services' },
+		{ name: 'Plans', link: '#Plans' },
 		{ name: 'Contact', link: '#Contact' }
 	];
 
@@ -14,7 +15,7 @@
 </script>
 
 <header
-	class={'sticky top-0 z-[10] flex items-center justify-between border border-solid duration-200 ' +
+	class={'sticky top-0 z-[10] flex items-center justify-between border border-solid pl-6 duration-200' +
 		(y > 0
 			? ' sticky top-0 z-[10] flex items-center justify-between rounded-2xl border border-solid bg-slate-900 px-6 py-4 duration-200'
 			: ' border-transparent bg-transparent py-6 ')}
@@ -31,9 +32,9 @@
 			>{/each}
 	</div>
 </header>
-<div class="flex place-content-center">
+<div class="flex place-content-end pr-10">
 	<button
-		class=" grid h-10 w-10 place-content-center rounded bg-amber-400 p-2 text-2xl font-bold text-black md:hidden"
+		class="z-[2] grid h-10 w-10 cursor-pointer place-content-center rounded bg-amber-300 p-2 text-2xl font-bold text-black hover:bg-violet-400 hover:text-white md:hidden"
 		onclick={toggleMenu}>☰</button
 	>
 	{#if showMenu}

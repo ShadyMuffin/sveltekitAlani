@@ -6,12 +6,13 @@
 	import Header from '../components/Header.svelte';
 	import Main from '../components/Main.svelte';
 	import Contact from './Contact.svelte';
+	import Plans from './Plans.svelte';
 	import Services from './Services.svelte';
 	let { children } = $props();
 
 	let y = $state(0);
-	let innerWidth = 0;
-	let innerHeight = 0;
+	let innerWidth = $state(0);
+	let innerHeight = $state(0);
 
 	function goToTop() {
 		document.body.scrollIntoView();
@@ -34,6 +35,7 @@
 	<Header {y} />
 	<div id="Home"><Main /></div>
 	<div id="Services"><Services /></div>
+	<div id="Plans"><Plans /></div>
 	<div id="Contact"><Contact /></div>
 	<Footer />
 </div>

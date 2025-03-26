@@ -40,7 +40,7 @@
 </script>
 
 <div class="h-auto w-full py-28 text-center">
-	<h1 class="py-20 text-4xl">Services</h1>
+	<h1 class="py-20 text-4xl underline">Services</h1>
 	<div class="flex place-content-center">
 		<section
 			class="align-content-center flex w-full flex-col justify-evenly gap-60 p-2 text-center text-xl font-bold text-wrap text-amber-200"
