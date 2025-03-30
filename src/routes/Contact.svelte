@@ -1,13 +1,14 @@
 <script>
 	import { onMount } from 'svelte';
 	import emailjs from '@emailjs/browser';
+	import { EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, EMAILJS_PUBLIC_KEY } from '$env/static/private';
 
 	let email = $state('');
 	let message = $state('');
 	let status = $state('');
 
 	onMount(() => {
-		emailjs.init('e_KMDLQaYx3UEdwhI');
+		emailjs.init(EMAILJS_PUBLIC_KEY);
 	});
 
 	// @ts-ignore
@@ -19,7 +20,7 @@
 			message: message
 		};
 
-		emailjs.send('service_wbxpn8s', 'template_1jtaklt', templateParams).then(
+		emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams).then(
 			() => {
 				status = "Message sent! I'll get back to you soon.";
 				email = '';
