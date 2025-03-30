@@ -1,5 +1,5 @@
 <script>
-	export let y;
+	let { y } = $props();
 	let tabs = [
 		{ name: 'Home', link: '/' },
 		{ name: 'Services', link: '#Services' },
@@ -7,7 +7,7 @@
 		{ name: 'Contact', link: '#Contact' }
 	];
 
-	let showMenu = false;
+	let showMenu = $state(false);
 
 	function toggleMenu() {
 		showMenu = !showMenu;
@@ -35,6 +35,7 @@
 <div class="flex place-content-center pr-10">
 	{#if showMenu}
 		<div
+			id="menu"
 			class="absolute top-16 left-0 z-10 flex w-1/3 flex-col place-items-center gap-4 bg-gray-900 p-5 text-center text-3xl font-bold text-white uppercase lg:hidden"
 		>
 			{#each tabs as tab}
@@ -52,6 +53,7 @@
 			>
 		</div>
 	{:else}<button
+			id="burger"
 			class="z-[2] grid h-10 w-10 cursor-pointer place-content-center rounded-xl border-4 bg-slate-600 p-2 text-2xl font-bold text-violet-400 duration-200 ease-in-out hover:bg-violet-800 hover:text-slate-800 lg:hidden"
 			onclick={toggleMenu}>☰</button
 		>
