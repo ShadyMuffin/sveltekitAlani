@@ -1,24 +1,3 @@
-// import { json } from '@sveltejs/kit';
-// import EmailJS from '@emailjs/nodejs';
-// import { EMAILJS_PUBLIC_KEY, EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID } from '$env/static/private';
-
-// // @ts-ignore
-// export async function POST({ request }) {
-// 	try {
-// 		const { email, message } = await request.json();
-
-// 		// @ts-ignore
-// 		await EmailJS.init(EMAILJS_PUBLIC_KEY);
-
-// 		const result = await EmailJS.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, { email, message });
-// 		console.log('Email sent:', result); // Debug
-// 		return json({ success: true }, { status: 200 });
-// 	} catch (error) {
-// 		console.error('Email failed:', error); // Debug
-// 		return json({ success: false, error: 'Failed to send email' }, { status: 500 });
-// 	}
-// }
-
 import { json } from '@sveltejs/kit';
 import EmailJS from '@emailjs/nodejs';
 import { EMAILJS_PUBLIC_KEY, EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID } from '$env/static/private';
