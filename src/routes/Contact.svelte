@@ -1,41 +1,31 @@
 <script>
-	import { onMount } from 'svelte';
-	import emailjs from '@emailjs/browser';
-
 	let email = $state('');
 	let message = $state('');
 	let status = $state('');
 
-	onMount(() => {
-		emailjs.init('e_KMDLQaYx3UEdwhI');
-	});
-
 	// @ts-ignore
-	function handleSubmit(e) {
+	async function handleSubmit(e) {
 		e.preventDefault();
 
-		const templateParams = {
-			email: email,
-			message: message
-		};
-
-		emailjs.send('service_wbxpn8s', 'template_1jtaklt', templateParams).then(
-			() => {
-				status = "Message sent! I'll get back to you soon.";
-				email = '';
-				message = '';
-				setTimeout(() => {
-					status = '';
-				}, 3000);
-			},
-			(error) => {
-				console.error('EmailJS error:', error);
-				status = 'Oops, something went wrong. Try again!';
-				setTimeout(() => {
-					status = '';
-				}, 4000);
-			}
-		);
+		const response = await fetch('/api/send-email', {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/json' },
+			body: JSON.stringify({ email, message })
+		});
+		const data = await response.json();
+		if (response.ok && data.success) {
+			status = "Message sent! I'll get back to you soon.";
+			email = '';
+			message = '';
+			setTimeout(() => {
+				status = '';
+			}, 3000);
+		} else {
+			status = data.error || 'Oops, something went wrong. Try again!';
+			setTimeout(() => {
+				status = '';
+			}, 4000);
+		}
 	}
 </script>
 
