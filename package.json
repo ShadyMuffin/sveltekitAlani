@@ -36,6 +36,8 @@
 		"vite": "^6.0.0"
 	},
 	"dependencies": {
-		"@emailjs/browser": "^4.4.1"
+		"@emailjs/browser": "^4.4.1",
+		"@emailjs/nodejs": "^5.0.2",
+		"dotenv": "^16.4.7"
 	}
 }
