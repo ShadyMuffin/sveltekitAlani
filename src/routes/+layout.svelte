@@ -8,6 +8,7 @@
 	import Contact from './Contact.svelte';
 	import Plans from './Plans.svelte';
 	import Services from './Services.svelte';
+	import FAQ from './Faq.svelte';
 	let { children } = $props();
 
 	let y = $state(0);
@@ -37,6 +38,7 @@
 	<div id="Services"><Services /></div>
 	<div id="Plans"><Plans /></div>
 	<div id="Contact"><Contact /></div>
+	<div id="Faq"><FAQ /></div>
 	<Footer />
 </div>
 

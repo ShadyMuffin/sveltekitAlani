@@ -3,7 +3,7 @@
 	let message = $state('');
 	let status = $state('');
 
-	// @ts-ignore
+	//@ts-ignore
 	async function handleSubmit(e) {
 		e.preventDefault();
 
