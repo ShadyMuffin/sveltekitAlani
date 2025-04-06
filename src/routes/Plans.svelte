@@ -49,7 +49,7 @@
 			</div>
 		{/each}
 	</div>
-	<div class="py-14 text-4xl italic">
-		<p class="mx-auto w-auto px-4">These aren't your only options, feel free to email me.</p>
+	<div class="py-14 text-4xl">
+		<h1 class="mx-auto w-auto px-4 py-10">Fast and minimalist websites.</h1>
 	</div>
 </section>
