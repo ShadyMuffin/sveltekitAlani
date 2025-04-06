@@ -56,7 +56,7 @@
 				class="flex flex-col gap-6 text-center md:gap-8 lg:justify-center lg:gap-10 lg:text-left"
 			>
 				<h2 class="text-center text-xl font-semibold sm:text-2xl md:text-3xl">
-					Hi! I'm <span class="text-4xl text-violet-400">Kevin</span>
+					Hi! I'm <span class="text-4xl text-violet-400">Alani</span>
 				</h2>
 				<h6 class="md:text-xxl text-center text-lg font-bold sm:text-2xl">
 					My goal is to help <br /> small businesses
@@ -77,14 +77,13 @@
 				class="flex flex-col gap-2 text-center tracking-widest"
 			>
 				<h1 class="text-4xl">About Me</h1>
-				<p class="py-6 font-sans text-2xl font-bold">
+				<h1 class="py-6 font-sans text-2xl font-bold">
 					As a self-taught <span
 						class="text-3xl font-extrabold text-pretty text-violet-400 uppercase italic"
-					>
-						developer
-					</span>, I design websites, keep them live, and grow them with ads. Here for the little
-					guys who need a big online edge.
-				</p>
+						>developer</span
+					>, I design websites, keep them live, and grow them with ads. Here for the little guys who
+					need a big online edge.
+				</h1>
 			</div>
 			<button
 				onclick={goToContact}
