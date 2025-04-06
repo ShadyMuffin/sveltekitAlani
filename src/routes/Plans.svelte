@@ -26,7 +26,7 @@
 	];
 </script>
 
-<section class="rounded-2xl bg-slate-900 text-center">
+<section class=" text-center">
 	<h1 class="py-30 text-3xl underline">Plans</h1>
 	<div class="grid place-content-center justify-evenly gap-20 xl:grid-cols-1">
 		{#each plans as plan}
