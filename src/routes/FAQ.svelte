@@ -20,12 +20,12 @@
 		{
 			question: 'Do you offer ongoing support and maintenance?',
 			answer:
-				'Yes! We offer ongoing support, updates, and maintenance to ensure your website stays secure, fast, and up to date. Would you like me to adjust any of these or add more? 🚀'
+				'Yes! We offer ongoing support, updates, and maintenance to ensure your website stays secure, fast, and up to date.'
 		},
 		{
 			question: 'Will my website be SEO-friendly?',
 			answer:
-				"Yes! We build websites with SEO best practices to help your business rank higher on Google. This includes fast loading speeds, mobile optimization, and keyword-friendly content. Let me know if you'd like any other changes! 🚀"
+				'Yes! We build websites with SEO best practices to help your business rank higher on Google. This includes fast loading speeds, mobile optimization, and keyword-friendly content.'
 		}
 	];
 

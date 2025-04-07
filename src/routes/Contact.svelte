@@ -35,7 +35,7 @@
 		<form
 			method="POST"
 			onsubmit={handleSubmit}
-			class="grid w-auto place-items-center justify-items-center gap-12 rounded-2xl border-2 bg-slate-800 p-7 text-center mix-blend-difference"
+			class="grid w-auto place-items-center justify-items-center gap-12 rounded-2xl border-2 bg-slate-900 p-7 text-center"
 		>
 			<input
 				placeholder="Your Email"
