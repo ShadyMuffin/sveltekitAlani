@@ -44,7 +44,7 @@
 							{list}
 						</li>{/each}
 				</ul>
-				<Button />
+				<Button>BUY NOW!</Button>
 			</div>
 		{/each}
 	</div>
